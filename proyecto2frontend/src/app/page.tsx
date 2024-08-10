@@ -1,11 +1,16 @@
 import Image from "next/image";
 import * as React from 'react';
 import DehazeIcon from '@mui/icons-material/Dehaze';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import EmailIcon from '@mui/icons-material/Email';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import {Button} from "@mui/material";
 
 export default function Home() {
   return (
       <main className={'MainContainer'}>
-        <header className={'HeaderContainer'}>
+          <header className={'HeaderContainer'}>
             <div className={'HeaderContainerContent'}>
                 <nav className={'NavBarContainer'}>
                     <h1 className={'NavTitle'}>RESER<span className={'orangeColor'}>HUB</span></h1>
@@ -43,6 +48,40 @@ export default function Home() {
                   <div className={'AboutServiceContainer'}></div>
               </div>
           </section>
+          <footer className={'FooterContainer'}>
+              <div className={'FooterContent'}>
+                  <section className={'FooterTitleSection'}>
+                      <h2 className={'FooterTitle'}>ReserHub</h2>
+                      <div className={'SocialMediaContainer'}>
+                          <div className={'InstagramMedia'}>
+                              <InstagramIcon/>
+                              <span className={'SpanMedia'}>Instagram</span>
+                          </div>
+                          <div className={'GitMedia'}>
+                              <GitHubIcon />
+                              <span className={'SpanMedia'}>GitHub</span>
+                          </div>
+                      </div>
+                  </section>
+                  <section className={'FooterContactSection'}>
+                      <div className={'MailContainer'}>
+                          <EmailIcon className={'MailIcon'}/>
+                          <p className={'MailText'}>Mail de Contacto: manuel.moyavadillo2@gmail.com</p>
+                      </div>
+                      <div className={'LinkedInContainer'}>
+                          <LinkedInIcon className={'LinkedInIcon'}/>
+                          <p className={'LinkedInText'}>LinkedIn: manuel-moya-vadillo</p>
+                      </div>
+                      <div className={'ContactContainer'}>
+                          <Button className={'ContactBtn'} variant={'contained'}>Contacta</Button>
+                      </div>
+                  </section>
+                  <section className={'FooterCopySection'}>
+                      <p>@Copyright: This work is licensed under CC BY-NC 4.0</p>
+                  </section>
+              </div>
+          </footer>
+
       </main>
   );
 }

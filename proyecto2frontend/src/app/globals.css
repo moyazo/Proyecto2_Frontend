@@ -129,6 +129,7 @@ section.AboutContainer{
   flex-flow: column;
   align-items: center;
   justify-content: space-around;
+  margin: 0 0 2.5em 0;
 }
 div.AboutTextContainer{
   width: 80%;
@@ -164,6 +165,121 @@ p.AboutText{
   align-items: center;
   justify-content: space-around;
   background: var(--headervideo-color);
+}
+
+footer.FooterContainer {
+  width: 100%;
+  height: 30%;
+  background: var(--primary2-color);
+}
+
+.FooterContent {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas iguales para la primera fila */
+  grid-template-rows: 1fr auto; /* Dos filas: primera ajustable y la segunda se adapta a su contenido */
+  gap: 10px; /* Espacio opcional entre los elementos */
+}
+
+.FooterTitleSection {
+  grid-column: 1 / 2; /* Primera columna de la primera fila */
+  grid-row: 1 / 2;    /* Primera fila */ /* Color de fondo para identificar */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+h2.FooterTitle {
+  width: 50%;
+  font-size: 3em;
+  font-weight: normal;
+  color: var(--white);
+}
+div.SocialMediaContainer{
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: start;
+  gap: 10px;
+  color: var(--white);
+}
+div.LinkedInMedia{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.InstagramMedia{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.GitMedia{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SpanMedia {
+  margin-left: .2em;
+}
+
+.FooterContactSection {
+  grid-column: 2 / 3; /* Segunda columna de la primera fila */
+  grid-row: 1 / 2;    /* Primera fila */ /* Color de fondo para identificar */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  color: var(--white);
+  padding-left: 5em;
+}
+.MailContainer{
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+.LinkedInContainer{
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+.ContactContainer{
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.ContactContainer > .ContactBtn{
+  width: 25%;
+  background: var(--headervideo-color);
+}
+
+.FooterCopySection{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin-bottom: 1.75rem;
+  color: var(--white);
+}
+
+
+.FooterCopySection {
+  grid-column: 1 / 3; /* Ocupa ambas columnas en la segunda fila */
+  grid-row: 2 / 3;    /* Segunda fila */ /* Color de fondo para identificar */
 }
 @layer utilities {
   .text-balance {
